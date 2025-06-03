@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}HomeConnecti-Fi{% endblock %}</title> {# Default title #}
+  <link rel="stylesheet" href="/pages/home/styles/styles.css" /> {# Global stylesheet #}
+  {% block head_scripts %}{% endblock %} {# Placeholder for page-specific head scripts #}
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">HomeConnecti-Fi</div>
+    <nav>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li> <a href="/select-role"> Signup/Signin</a>  </li>
+        <li>Properties ▾</li>
+        <li>Messages</li>
+        <li>Payment</li>
+        <li>Profile</li>
+      </ul>
+    </nav>
+  </header>
+
+  {# This is where the specific content of each page will be inserted #}
+  <main>
+    {% block content %}
+      {# Default content for pages that don't override the 'content' block.
+         For a layout, this is often empty or has a generic message. #}
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="social">
+      <span>🐦</span>
+      <span>💼</span>
+      <span>📸</span>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+      </ul>
+      <ul>
+        <li>Contact</li>
+        <li>Help center / FAQ</li>
+        <li>Report a problem</li>
+        <li>Terms & Conditions</li>
+      </ul>
+    </div>
+    <p>&copy; 2025, All Rights Reserved</p>
+  </footer>
+
+  <script src="/script.js"></script> {# Global script, usually at the end of body #}
+  {% block body_scripts %}{% endblock %} {# Placeholder for page-specific body scripts #}
+</body>
+</html>

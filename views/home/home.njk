@@ -1,0 +1,115 @@
+{% extends "layouts/base.njk" %} {# This connects it to your base layout #}
+
+{% block title %}Home - HomeConnecti-Fi{% endblock %} {# Overrides the default title in layout.njk #}
+
+{% block content %}
+  <div class="search-bar">
+    <input type="text" placeholder="Location" aria-label="Enter location" />
+    <input type="text" placeholder="Description" aria-label="Enter description" />
+    <input type="text" placeholder="Budget" aria-label="Enter budget" />
+    <button aria-label="Search"><span>🔍</span></button>
+  </div>
+
+  <section id="search-results" class="property-section" style="display: none;">
+    <h2>Search Results</h2>
+    <div class="carousel">
+      <button class="prev">←</button>
+      <div class="carousel-track" id="search-track"></div>
+      <button class="next">→</button>
+    </div>
+  </section>
+
+  <main> {# Note: The <main> tag should ideally be defined once in the layout, and its content overridden.
+           You already have <main> in layout.njk, so this <main> here is technically nested.
+           Consider putting only the section content directly inside the block. #}
+    <section class="property-section">
+      <h2>Stay in Abuja</h2>
+      <div class="carousel">
+        <button class="prev">←</button>
+        <div class="carousel-track">
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 67 (1).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Garki</p>
+            <span>₦6.5m ★ 4.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 67 (2).png" alt="Apartment" loading="lazy"/>
+            <p>Apartment in Garki</p>
+            <span>₦2.5m ★ 4.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 67.png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Garki</p>
+            <span>₦3.5m ★ 5.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 68 (1).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Garki</p>
+            <span>₦9.5m ★ 5.0</span>
+          </div>
+        </div>
+        <button class="next">→</button>
+      </div>
+    </section>
+
+    <section class="property-section">
+      <h2>Available for Similar dates</h2>
+      <div class="carousel">
+        <button class="prev">←</button>
+        <div class="carousel-track">
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 68 (2).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Ikeja</p>
+            <span>₦10.5m ★ 5.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 68.png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Lekki</p>
+            <span>₦14.5m ★ 4.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 69 (1).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in Ikoyi</p>
+            <span>₦8.5m ★ 3.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 69 (2).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in V.I</p>
+            <span>₦15.5m ★ 5.0</span>
+          </div>
+        </div>
+        <button class="next">→</button>
+      </div>
+    </section>
+
+    <section class="property-section">
+      <h2>Stay in Lagos</h2>
+      <div class="carousel">
+        <button class="prev">←</button>
+        <div class="carousel-track">
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 69.png" alt="Apartment" loading="lazy" />
+            <p>Apartment in V.I</p>
+            <span>₦15.5m ★ 5.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 70 (1).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in V.I</p>
+            <span>₦20.5m ★ 5.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 70 (2).png" alt="Apartment" loading="lazy" />
+            <p>Apartment in V.I</p>
+            <span>₦8.5m ★ 4.0</span>
+          </div>
+          <div class="card">
+            <img src="/pages/home/styles/property image/Frame 70.png" alt="Apartment" loading="lazy" />
+            <p>Apartment in V.I</p>
+            <span>₦7.5m ★ 3.0</span>
+          </div>
+        </div>
+        <button class="next">→</button>
+      </div>
+    </section>
+  </main>
+{% endblock %}

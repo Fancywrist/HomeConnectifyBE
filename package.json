@@ -1,0 +1,29 @@
+{
+  "name": "home-connectify",
+  "version": "1.0.0",
+  "description": "A digital platform that enables tenants to rent properties directly from landlords without agent involvement. The platform will reduce costs, increase transparency, and simplify the rental process.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch server.js"
+  },
+  "keywords": [
+    "house",
+    "rent",
+    "home",
+    "nigeria"
+  ],
+  "author": "basirat",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "chokidar": "^3.6.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.15.1",
+    "nunjucks": "^3.2.4"
+  }
+}
